@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana Cultural - IFSP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header class="flex column">
+            <nav class="flex space center" style="font-size: 40px;">
+                <div class="flex center">
+                    <img width="80" src="./logo.png" alt="logo">
+                    <p style="margin-left: 10px;">Semana Cultural</p>
+                </div>
+                <span style="color: #008000;">INFO - 1</span>
+            </nav>
+            <form class="flex">
+                <input type="text" placeholder="Nome"/>
+                <button type="submit" id="submit">Confirmar Resposta</button>
+            </form>
+        </header>
+        <div id="container" class="container">
+                <div class="a" name="A" style="background-color: #020281;">
+                    <p>Grupo<span>A</span></p>
+                </div>
+                <div class="b" name="B" style="background-color: #996300;">
+                    <p>Grupo<span>B</span></p>
+                </div>
+                <div class="c" name="C" style="background-color: #870303;">
+                    <p>Grupo<span>C</span></p>
+                </div>
+                <div class="d" name="D" style="background-color: #660066;">
+                    <p>Grupo<span>D</span></p>
+                </div>
+                <div class="e" name="E" style="background-color: #a70939;">
+                    <p>Grupo<span>E</span></p>
+                </div>
+                <div class="f" name="F" style="background-color: #661400;">
+                    <p>Grupo<span>F</span></p>
+                </div>
+                <div class="d" name="G" style="background-color: #003049;">
+                    <p>Grupo<span>G</span></p>
+                </div>
+        </div>
+    </section>
+    <div class="modal flex column center hidden" style="text-align: center;"></div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+</body>
+</html>

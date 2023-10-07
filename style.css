@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  background-color: #202324;
+  color: #aba499;
+}
+::-webkit-scrollbar-corner {
+  background-color: #181a1b;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #454a4d;
+}
+
+.flex {
+  display: flex;
+}
+.center {
+  align-items: center;
+}
+.column {
+  flex-direction: column;
+}
+.space {
+  justify-content: space-between;
+}
+.hidden {
+  display: none;
+}
+
+body {
+  background-color: #131516;
+  color: white;
+}
+nav {
+  height: 70%;
+}
+form {
+  height: 30%;
+  gap: 10px;
+}
+form button {
+  width: 25%;
+  font-size: 25px;
+  padding: 5px;
+  background-color: #22b14c;
+}
+form input {
+  padding: 10px 15px;
+  font-size: 25px;
+  width: 75%;
+  background-color: #3b3b3b;
+}
+form input::placeholder,
+form input {
+  color: #e8e6e3;
+}
+form input,
+form button {
+  border: none;
+  border-radius: 15px;
+}
+button:hover {
+  cursor: pointer;
+}
+section {
+  padding: 25px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 25% 75%;
+  gap: 1em;
+}
+#container {
+  width: calc(100vw - 50px);
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+#container div {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  font-size: 60px;
+  border: 5px solid #303436;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-out;
+}
+#container div.selected {
+  border-color: #00d942;
+}
+
+#container div p {
+  width: 60px;
+  text-align: center;
+  word-wrap: break-word;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+.modal {
+  justify-content: center;
+  width: 50%;
+  min-height: 50%;
+  position: absolute;
+  top: 25%;
+  right: 25%;
+  background-color: #1c1e1f;
+  color: white;
+  border: 5px solid #00d942;
+  border-radius: 15px;
+  font-size: 55px;
+  z-index: 2;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2.5px);
+  z-index: 1;
+  cursor: pointer;
+}
